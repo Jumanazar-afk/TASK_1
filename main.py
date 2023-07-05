@@ -1,30 +1,12 @@
-class People():
-    def __init__(self, NSF, born, phone, city, country, adress):
-        self.NSF = NSF
-        self.born = born
-        self.phone = phone
-        self.city = city
-        self.country = country
-        self.adress = adress
+class Task2():
+    def __init__(self, city, country, region, resident, city_index, phone_code):
+        self.city =city
+        self.country =country
+        self.region = region
+        self.resident = resident
+        self.city_index = city_index
+        self.phone_code = phone_code
 
-    def nsf(self):
-        return self.NSF()
-
-    def born(self):
-        return self.born()
-
-    def phone(self):
-        return self.phone()
-
-    def city(self):
-        return self.city()
-
-    def country(self):
-        return self.country()
-
-    def adress(self):
-        return self.adress()
-
-
-p1 = People("agzam", "41.23.2200", "941354996898", "tashkent", "uzb", "street-6")
-print(p1.NSF)
+a = Task2(input("City name:"), input("Your Country :"), input("Your region"), input("count resident"), input("city index:"), input("city phone code:"))
+print("Your city:", a.city, ",", "your country:", a.country, ",", "your region:", a.region, ",", "your city residents:",
+      a.resident, ",", "your city index:", a.city_index, ",", "your city phone code:", a.phone_code)
