@@ -26,5 +26,7 @@ class People():
         return self.adress()
 
 
-p1 = People("agzam", "41.23.2200", "941354996898", "tashkent", "uzb", "street-6")
-print(p1.NSF)
+p1 = People(input("Enter your name:"), input("Your B-Day:"), input("Your phone number:"), input("Your city:"), input("Your country:"), input("Your adress:"))
+print(p1.NSF,",", p1.born, ",", p1.phone,",", p1.city,",", p1.country,",", p1.adress)
+
+
