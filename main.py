@@ -26,16 +26,5 @@ class People():
         return self.adress()
 
 
-a = input(People.nsf)
-b = input(People.born)
-c = input(People.phone)
-d = input(People.city)
-e = input(People.country)
-f = input(People.adress)
-
-print(a,"My name is:",
-      b,"i was born:",
-      c,"my phone = ",
-      d,"my city:",
-      e,"my country:",
-      f,"my adress:")
+p1 = People("agzam", "41.23.2200", "941354996898", "tashkent", "uzb", "street-6")
+print(p1.NSF)
